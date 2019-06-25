@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Game from './Game';
 
-const Games = ({ gamesData: { totalGames, date, games } }) => {
+const ListOfGames = ({ gamesData: { totalGames, date, games } }) => {
   return (
     <Fragment>
       <p>
@@ -14,8 +14,8 @@ const Games = ({ gamesData: { totalGames, date, games } }) => {
   );
 };
 
-Games.propTypes = {
+ListOfGames.propTypes = {
   gamesData: PropTypes.object.isRequired
 };
 
-export default Games;
+export default ListOfGames;
