@@ -17,3 +17,28 @@
   background-color: #1eacdd;
   color: white;
 }
+
+.score {
+  position: absolute;
+  right: 0;
+  margin-right: 2vw;
+}
+
+.center-elem {
+  margin: auto;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.small {
+  max-width: 100px;
+}
+
+.medium {
+  max-width: 175px;
+}
+
+.large {
+  max-width: 225px;
+}

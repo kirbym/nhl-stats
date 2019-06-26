@@ -7,8 +7,8 @@ import Spinner from '../common/Spinner';
 
 const Landing = ({ getGamesByDate, schedule }) => {
   useEffect(() => {
-    getGamesByDate();
-    // getGamesByDate('2019-04-05', '2019-04-05');
+    // getGamesByDate();
+    getGamesByDate('2019-04-05', '2019-04-05');
   }, [getGamesByDate]);
 
   return (
@@ -16,17 +16,21 @@ const Landing = ({ getGamesByDate, schedule }) => {
       {schedule.loading ? (
         <Spinner />
       ) : (
-        <Fragment>
+        <div className="container-fluid" style={{ marginTop: '5vh' }}>
           {schedule.dates.length > 0 ? (
             schedule.dates.map(gamesOnDay => (
-              <ListOfGames key={gamesOnDay.date} gamesData={gamesOnDay} />
+              <div className="row no-gutters">
+                <div className="col-12">
+                  <ListOfGames key={gamesOnDay.date} gamesData={gamesOnDay} />
+                </div>
+              </div>
             ))
           ) : (
             <div className="text-center" style={{ marginTop: '15vh' }}>
               <span className="h5 pill-lg ice">No games today</span>
             </div>
           )}
-        </Fragment>
+        </div>
       )}
     </Fragment>
   );
