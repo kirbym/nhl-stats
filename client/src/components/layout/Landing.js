@@ -19,8 +19,8 @@ const Landing = ({ getGamesByDate, schedule }) => {
         <div className="container-fluid" style={{ marginTop: '5vh' }}>
           {schedule.dates.length > 0 ? (
             schedule.dates.map(gamesOnDay => (
-              <div className="row no-gutters">
-                <div className="col-12">
+              <div key={gamesOnDay.date} className="row no-gutters">
+                <div key={gamesOnDay.date} className="col-12">
                   <ListOfGames key={gamesOnDay.date} gamesData={gamesOnDay} />
                 </div>
               </div>

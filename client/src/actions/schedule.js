@@ -7,7 +7,7 @@ export const getGamesByDate = (
 ) => async dispatch => {
   try {
     const res = await axios.get(
-      `https://statsapi.web.nhl.com/api/v1/schedule?startDate=${startDate}&endDate=${endDate}`
+      `https://statsapi.web.nhl.com/api/v1/schedule?startDate=${startDate}&endDate=${endDate}&expand=schedule.broadcasts&expand=schedule.linescore`
     );
 
     dispatch({

@@ -42,3 +42,15 @@
 .large {
   max-width: 225px;
 }
+
+.remove-margin {
+  margin: 0;
+}
+
+.align-text-right {
+  text-align: right;
+}
+
+.align-text-center {
+  text-align: center;
+}
