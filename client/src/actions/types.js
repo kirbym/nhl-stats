@@ -1,1 +1,2 @@
-export const GET_GAMES = 'GET_GAMES';
+export const GET_SCHEDULE = 'GET_SCHEDULE';
+export const GET_ACTIVE_TEAMS = 'GET_ACTIVE_TEAMS';

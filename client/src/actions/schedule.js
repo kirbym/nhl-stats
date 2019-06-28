@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_GAMES } from './types';
+import { GET_SCHEDULE } from './types';
 
 export const getGamesByDate = (
   startDate = new Date().toLocaleDateString(),
@@ -11,10 +11,10 @@ export const getGamesByDate = (
     );
 
     dispatch({
-      type: GET_GAMES,
+      type: GET_SCHEDULE,
       payload: res.data
     });
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 };

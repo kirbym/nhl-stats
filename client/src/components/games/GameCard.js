@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import TeamRow from './TeamRow';
 import PreGameFooter from './PreGameFooter';
 import LinescoreFooter from './LinescoreFooter';
@@ -13,7 +14,8 @@ const GameCard = ({
     gameDate,
     broadcasts,
     linescore
-  }
+  },
+  teams: { activeTeams }
 }) => {
   const [footer, toggleFooter] = useState(false);
 
@@ -52,7 +54,15 @@ const GameCard = ({
 };
 
 GameCard.propTypes = {
-  gameData: PropTypes.object.isRequired
+  gameData: PropTypes.object.isRequired,
+  teams: PropTypes.object.isRequired
 };
 
-export default GameCard;
+const mapStateToProps = state => ({
+  teams: state.teams
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(GameCard);

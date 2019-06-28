@@ -2,14 +2,16 @@ import React, { Fragment, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getGamesByDate } from '../../actions/schedule';
+import { getActiveTeams } from '../../actions/teams';
 import ListOfGames from '../games/ListOfGames';
 import Spinner from '../common/Spinner';
 
-const Landing = ({ getGamesByDate, schedule }) => {
+const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
   useEffect(() => {
     // getGamesByDate();
     getGamesByDate('2019-04-05', '2019-04-05');
-  }, [getGamesByDate]);
+    getActiveTeams();
+  }, [getGamesByDate, getActiveTeams]);
 
   return (
     <Fragment>
@@ -38,6 +40,7 @@ const Landing = ({ getGamesByDate, schedule }) => {
 
 Landing.propTypes = {
   getGamesByDate: PropTypes.func.isRequired,
+  getActiveTeams: PropTypes.func.isRequired,
   schedule: PropTypes.object.isRequired
 };
 
@@ -47,5 +50,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { getGamesByDate }
+  { getGamesByDate, getActiveTeams }
 )(Landing);
