@@ -34,7 +34,7 @@ const GameCard = ({
             <hr style={{ borderWidth: '2px', backgroundColor: 'darkgray' }} />
             <TeamRow teamData={away} detailedState={detailedState} />
           </div>
-          <div className="col-2" style={{ border: 'red solid 1px' }}>
+          <div className="col-2">
             <DetailedState
               detailedState={detailedState}
               linescore={linescore}
