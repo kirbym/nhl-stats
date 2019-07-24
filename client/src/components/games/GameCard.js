@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import TeamRow from './TeamRow';
 import PreGameFooter from './PreGameFooter';
 import LinescoreFooter from './LinescoreFooter';
+import DetailedState from './DetailedState';
 
 const GameCard = ({
   gameData: {
@@ -33,7 +34,12 @@ const GameCard = ({
             <hr style={{ borderWidth: '2px', backgroundColor: 'darkgray' }} />
             <TeamRow teamData={away} detailedState={detailedState} />
           </div>
-          <div className="col-2 h6 center-elem">{detailedState}</div>
+          <div className="col-2" style={{ border: 'red solid 1px' }}>
+            <DetailedState
+              detailedState={detailedState}
+              linescore={linescore}
+            />
+          </div>
         </div>
       </div>
       {footer && (
@@ -45,7 +51,11 @@ const GameCard = ({
               broadcasts={broadcasts}
             />
           ) : (
-            <LinescoreFooter />
+            <LinescoreFooter
+              linescore={linescore}
+              homeInfo={activeTeams.find(active => home.team.id === active.id)}
+              awayInfo={activeTeams.find(active => away.team.id === active.id)}
+            />
           )}
         </div>
       )}
