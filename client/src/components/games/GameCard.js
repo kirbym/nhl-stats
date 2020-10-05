@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import TeamRow from './TeamRow';
-import PreGameFooter from './PreGameFooter';
-import LinescoreFooter from './LinescoreFooter';
-import DetailedState from './DetailedState';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import TeamRow from "./TeamRow";
+import PreGameFooter from "./PreGameFooter";
+import LinescoreFooter from "./LinescoreFooter";
+import DetailedState from "./DetailedState";
 
 const GameCard = ({
   gameData: {
@@ -14,14 +14,14 @@ const GameCard = ({
     status: { detailedState },
     gameDate,
     broadcasts,
-    linescore
+    linescore,
   },
-  teams: { activeTeams }
+  teams: { activeTeams },
 }) => {
   const [footer, toggleFooter] = useState(false);
 
   return (
-    <div className="card" style={{ marginBottom: '2vh' }}>
+    <div className="card" style={{ marginBottom: "2vh" }}>
       <div
         className="card-body"
         onClick={() => {
@@ -31,7 +31,7 @@ const GameCard = ({
         <div className="row no-gutters">
           <div className="col-10">
             <TeamRow teamData={home} detailedState={detailedState} />
-            <hr style={{ borderWidth: '2px', backgroundColor: 'darkgray' }} />
+            <hr style={{ borderWidth: "2px", backgroundColor: "darkgray" }} />
             <TeamRow teamData={away} detailedState={detailedState} />
           </div>
           <div className="col-2">
@@ -44,7 +44,7 @@ const GameCard = ({
       </div>
       {footer && (
         <div className="card-footer">
-          {detailedState === 'Scheduled' ? (
+          {detailedState === "Scheduled" ? (
             <PreGameFooter
               venue={venue}
               startTime={gameDate}
@@ -53,8 +53,12 @@ const GameCard = ({
           ) : (
             <LinescoreFooter
               linescore={linescore}
-              homeInfo={activeTeams.find(active => home.team.id === active.id)}
-              awayInfo={activeTeams.find(active => away.team.id === active.id)}
+              homeInfo={activeTeams.find(
+                (active) => home.team.id === active.id
+              )}
+              awayInfo={activeTeams.find(
+                (active) => away.team.id === active.id
+              )}
             />
           )}
         </div>
@@ -65,14 +69,11 @@ const GameCard = ({
 
 GameCard.propTypes = {
   gameData: PropTypes.object.isRequired,
-  teams: PropTypes.object.isRequired
+  teams: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = state => ({
-  teams: state.teams
+const mapStateToProps = (state) => ({
+  teams: state.teams,
 });
 
-export default connect(
-  mapStateToProps,
-  null
-)(GameCard);
+export default connect(mapStateToProps, null)(GameCard);
