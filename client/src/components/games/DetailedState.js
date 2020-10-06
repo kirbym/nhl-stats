@@ -1,21 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import moment from "moment";
+import { convertToGameTime } from "../../utils/convertToGameTime";
 
 const DetailedState = ({
   detailedState,
   linescore: {
     currentPeriodOrdinal,
     currentPeriodTimeRemaining,
-    intermissionInfo: { inIntermission, intermissionTimeRemaining }
-  }
+    intermissionInfo: { inIntermission, intermissionTimeRemaining },
+  },
+  startTime,
 }) => {
-  const gameScheduled = <h6>Scheduled</h6>;
+  const gameScheduled = <h6>{moment(startTime).format("LT")}</h6>;
+
   const gameFinal = (
     <h6>
       Final
-      <br />{' '}
-      {(currentPeriodOrdinal === 'OT' || currentPeriodOrdinal === 'SO') && (
-        <span>{currentPeriodOrdinal}</span>
+      {(currentPeriodOrdinal.includes("OT") ||
+        currentPeriodOrdinal.includes("SO")) && (
+        <span> / {currentPeriodOrdinal}</span>
       )}
     </h6>
   );
@@ -24,13 +28,13 @@ const DetailedState = ({
     <h6>
       {inIntermission ? (
         <span>
-          INT <br /> {intermissionTimeRemaining}
+          INT <br /> {convertToGameTime(intermissionTimeRemaining)}
         </span>
       ) : (
         <span>
-          {currentPeriodOrdinal} <br />{' '}
-          {currentPeriodTimeRemaining !== 'Final' && (
-            <span>{currentPeriodTimeRemaining}</span>
+          {currentPeriodOrdinal} <br />
+          {currentPeriodTimeRemaining !== "Final" && (
+            <span>{convertToGameTime(currentPeriodTimeRemaining)}</span>
           )}
         </span>
       )}
@@ -38,19 +42,22 @@ const DetailedState = ({
   );
 
   return (
-    <div>
-      {detailedState === 'Scheduled' && gameScheduled}
-      {detailedState === 'Final' && gameFinal}
-      {detailedState !== 'Scheduled' &&
-        detailedState !== 'Final' &&
-        gameInProgress}
+    <div className="row no-gutters">
+      <div className="col align-text-center">
+        {detailedState === "Scheduled" && gameScheduled}
+        {detailedState === "Final" && gameFinal}
+        {detailedState !== "Scheduled" &&
+          detailedState !== "Final" &&
+          gameInProgress}
+      </div>
     </div>
   );
 };
 
 DetailedState.propTypes = {
   detailedState: PropTypes.string.isRequired,
-  linescore: PropTypes.object.isRequired
+  linescore: PropTypes.object.isRequired,
+  startTime: PropTypes.string.isRequired,
 };
 
 export default DetailedState;

@@ -1,0 +1,1201 @@
+{
+  "data": {
+    "copyright": "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2020. All Rights Reserved.",
+    "totalItems": 3,
+    "totalEvents": 0,
+    "totalGames": 3,
+    "totalMatches": 0,
+    "wait": 10,
+    "dates": [
+      {
+        "date": "2020-08-11",
+        "totalItems": 3,
+        "totalEvents": 0,
+        "totalGames": 3,
+        "totalMatches": 0,
+        "games": [
+          {
+            "gamePk": 2019030121,
+            "link": "/api/v1/game/2019030121/feed/live",
+            "gameType": "P",
+            "season": "20192020",
+            "gameDate": "2020-08-11T19:00:00Z",
+            "status": {
+              "abstractGameState": "Final",
+              "codedGameState": "7",
+              "detailedState": "Final",
+              "statusCode": "7",
+              "startTimeTBD": false
+            },
+            "teams": {
+              "away": {
+                "leagueRecord": {
+                  "wins": 3,
+                  "losses": 3,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 2,
+                "team": {
+                  "id": 29,
+                  "name": "Columbus Blue Jackets",
+                  "link": "/api/v1/teams/29"
+                }
+              },
+              "home": {
+                "leagueRecord": {
+                  "wins": 3,
+                  "losses": 1,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 3,
+                "team": {
+                  "id": 14,
+                  "name": "Tampa Bay Lightning",
+                  "link": "/api/v1/teams/14"
+                }
+              }
+            },
+            "linescore": {
+              "currentPeriod": 8,
+              "currentPeriodOrdinal": "5OT",
+              "currentPeriodTimeRemaining": "Final",
+              "periods": [
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-11T19:09:57Z",
+                  "endTime": "2020-08-11T19:45:44Z",
+                  "num": 1,
+                  "ordinalNum": "1st",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 14,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 1,
+                    "shotsOnGoal": 6,
+                    "rinkSide": "right"
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-11T20:04:19Z",
+                  "endTime": "2020-08-11T20:43:43Z",
+                  "num": 2,
+                  "ordinalNum": "2nd",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 13,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 1,
+                    "shotsOnGoal": 10,
+                    "rinkSide": "left"
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-11T21:02:08Z",
+                  "endTime": "2020-08-11T21:39:58Z",
+                  "num": 3,
+                  "ordinalNum": "3rd",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 14,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 10,
+                    "rinkSide": "right"
+                  }
+                },
+                {
+                  "periodType": "OVERTIME",
+                  "startTime": "2020-08-11T21:55:33Z",
+                  "endTime": "2020-08-11T22:25:05Z",
+                  "num": 4,
+                  "ordinalNum": "OT",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 12,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 8,
+                    "rinkSide": "left"
+                  }
+                },
+                {
+                  "periodType": "OVERTIME",
+                  "startTime": "2020-08-11T22:41:05Z",
+                  "endTime": "2020-08-11T23:09:12Z",
+                  "num": 5,
+                  "ordinalNum": "2OT",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 6,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 10,
+                    "rinkSide": "right"
+                  }
+                },
+                {
+                  "periodType": "OVERTIME",
+                  "startTime": "2020-08-11T23:24:53Z",
+                  "endTime": "2020-08-11T23:56:24Z",
+                  "num": 6,
+                  "ordinalNum": "3OT",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 14,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 8,
+                    "rinkSide": "left"
+                  }
+                },
+                {
+                  "periodType": "OVERTIME",
+                  "startTime": "2020-08-12T00:12:02Z",
+                  "endTime": "2020-08-12T00:46:34Z",
+                  "num": 7,
+                  "ordinalNum": "4OT",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 14,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 8,
+                    "rinkSide": "right"
+                  }
+                },
+                {
+                  "periodType": "OVERTIME",
+                  "startTime": "2020-08-12T01:02:08Z",
+                  "endTime": "2020-08-12T01:22:50Z",
+                  "num": 8,
+                  "ordinalNum": "5OT",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 1,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 3,
+                    "rinkSide": "left"
+                  }
+                }
+              ],
+              "shootoutInfo": {
+                "away": {
+                  "scores": 0,
+                  "attempts": 0
+                },
+                "home": {
+                  "scores": 0,
+                  "attempts": 0
+                }
+              },
+              "teams": {
+                "home": {
+                  "team": {
+                    "id": 14,
+                    "name": "Tampa Bay Lightning",
+                    "link": "/api/v1/teams/14"
+                  },
+                  "goals": 3,
+                  "shotsOnGoal": 88,
+                  "goaliePulled": false,
+                  "numSkaters": 3,
+                  "powerPlay": false
+                },
+                "away": {
+                  "team": {
+                    "id": 29,
+                    "name": "Columbus Blue Jackets",
+                    "link": "/api/v1/teams/29"
+                  },
+                  "goals": 2,
+                  "shotsOnGoal": 63,
+                  "goaliePulled": false,
+                  "numSkaters": 3,
+                  "powerPlay": false
+                }
+              },
+              "powerPlayStrength": "Even",
+              "hasShootout": false,
+              "intermissionInfo": {
+                "intermissionTimeRemaining": 0,
+                "intermissionTimeElapsed": 0,
+                "inIntermission": false
+              },
+              "powerPlayInfo": {
+                "situationTimeRemaining": 0,
+                "situationTimeElapsed": 0,
+                "inSituation": true
+              }
+            },
+            "venue": {
+              "name": "Scotiabank Arena",
+              "link": "/api/v1/venues/null"
+            },
+            "broadcasts": [
+              {
+                "id": 241,
+                "name": "NBCSN",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 38,
+                "name": "SUN",
+                "type": "home",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 16,
+                "name": "FS-O",
+                "type": "away",
+                "site": "nhl",
+                "language": "en"
+              }
+            ],
+            "content": {
+              "link": "/api/v1/game/2019030121/content"
+            }
+          },
+          {
+            "gamePk": 2019030002,
+            "link": "/api/v1/game/2019030002/feed/live",
+            "gameType": "R",
+            "season": "20192020",
+            "gameDate": "2020-08-03T20:00:00Z",
+            "status": {
+              "abstractGameState": "Final",
+              "codedGameState": "7",
+              "detailedState": "Final",
+              "statusCode": "7",
+              "startTimeTBD": false
+            },
+            "teams": {
+              "away": {
+                "leagueRecord": {
+                  "wins": 0,
+                  "losses": 0,
+                  "ot": 1,
+                  "type": "league"
+                },
+                "score": 2,
+                "team": {
+                  "id": 15,
+                  "name": "Washington Capitals",
+                  "link": "/api/v1/teams/15"
+                }
+              },
+              "home": {
+                "leagueRecord": {
+                  "wins": 1,
+                  "losses": 0,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 3,
+                "team": {
+                  "id": 14,
+                  "name": "Tampa Bay Lightning",
+                  "link": "/api/v1/teams/14"
+                }
+              }
+            },
+            "linescore": {
+              "currentPeriod": 5,
+              "currentPeriodOrdinal": "SO",
+              "currentPeriodTimeRemaining": "Final",
+              "periods": [
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T20:09:16Z",
+                  "endTime": "2020-08-03T20:46:36Z",
+                  "num": 1,
+                  "ordinalNum": "1st",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 9,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 7,
+                    "rinkSide": "right"
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T21:05:23Z",
+                  "endTime": "2020-08-03T21:42:23Z",
+                  "num": 2,
+                  "ordinalNum": "2nd",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 8,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 2,
+                    "shotsOnGoal": 12,
+                    "rinkSide": "left"
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T22:01:08Z",
+                  "endTime": "2020-08-03T22:37:07Z",
+                  "num": 3,
+                  "ordinalNum": "3rd",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 8,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 11,
+                    "rinkSide": "right"
+                  }
+                },
+                {
+                  "periodType": "OVERTIME",
+                  "startTime": "2020-08-03T22:38:27Z",
+                  "endTime": "2020-08-03T22:45:52Z",
+                  "num": 4,
+                  "ordinalNum": "OT",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 3,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 3,
+                    "rinkSide": "left"
+                  }
+                }
+              ],
+              "shootoutInfo": {
+                "away": {
+                  "scores": 1,
+                  "attempts": 3
+                },
+                "home": {
+                  "scores": 2,
+                  "attempts": 3
+                },
+                "startTime": "2020-08-03T22:47:39Z"
+              },
+              "teams": {
+                "home": {
+                  "team": {
+                    "id": 14,
+                    "name": "Tampa Bay Lightning",
+                    "link": "/api/v1/teams/14"
+                  },
+                  "goals": 3,
+                  "shotsOnGoal": 28,
+                  "goaliePulled": false,
+                  "numSkaters": 0,
+                  "powerPlay": false
+                },
+                "away": {
+                  "team": {
+                    "id": 15,
+                    "name": "Washington Capitals",
+                    "link": "/api/v1/teams/15"
+                  },
+                  "goals": 2,
+                  "shotsOnGoal": 33,
+                  "goaliePulled": false,
+                  "numSkaters": 1,
+                  "powerPlay": false
+                }
+              },
+              "powerPlayStrength": "Even",
+              "hasShootout": true,
+              "intermissionInfo": {
+                "intermissionTimeRemaining": 0,
+                "intermissionTimeElapsed": 0,
+                "inIntermission": false
+              },
+              "powerPlayInfo": {
+                "situationTimeRemaining": 111,
+                "situationTimeElapsed": 0,
+                "inSituation": false
+              }
+            },
+            "venue": {
+              "name": "Scotiabank Arena",
+              "link": "/api/v1/venues/null"
+            },
+            "broadcasts": [
+              {
+                "id": 241,
+                "name": "NBCSN",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 337,
+                "name": "NHL.TV",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 38,
+                "name": "SUN",
+                "type": "home",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 320,
+                "name": "NBCSWA",
+                "type": "away",
+                "site": "nhl",
+                "language": "en"
+              }
+            ],
+            "content": {
+              "link": "/api/v1/game/2019030002/content"
+            }
+          },
+          {
+            "gamePk": 2019030012,
+            "link": "/api/v1/game/2019030012/feed/live",
+            "gameType": "R",
+            "season": "20192020",
+            "gameDate": "2020-08-03T22:30:00Z",
+            "status": {
+              "abstractGameState": "Final",
+              "codedGameState": "7",
+              "detailedState": "Final",
+              "statusCode": "7",
+              "startTimeTBD": false
+            },
+            "teams": {
+              "away": {
+                "leagueRecord": {
+                  "wins": 0,
+                  "losses": 1,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 3,
+                "team": {
+                  "id": 25,
+                  "name": "Dallas Stars",
+                  "link": "/api/v1/teams/25"
+                }
+              },
+              "home": {
+                "leagueRecord": {
+                  "wins": 1,
+                  "losses": 0,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 5,
+                "team": {
+                  "id": 54,
+                  "name": "Vegas Golden Knights",
+                  "link": "/api/v1/teams/54"
+                }
+              }
+            },
+            "linescore": {
+              "currentPeriod": 3,
+              "currentPeriodOrdinal": "3rd",
+              "currentPeriodTimeRemaining": "Final",
+              "periods": [
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T23:40:20Z",
+                  "endTime": "2020-08-04T00:11:42Z",
+                  "num": 1,
+                  "ordinalNum": "1st",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 7
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 8
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-04T00:30:06Z",
+                  "endTime": "2020-08-04T01:08:21Z",
+                  "num": 2,
+                  "ordinalNum": "2nd",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 10
+                  },
+                  "away": {
+                    "goals": 3,
+                    "shotsOnGoal": 13
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-04T01:26:34Z",
+                  "endTime": "2020-08-04T02:03:48Z",
+                  "num": 3,
+                  "ordinalNum": "3rd",
+                  "home": {
+                    "goals": 4,
+                    "shotsOnGoal": 16
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 6
+                  }
+                }
+              ],
+              "shootoutInfo": {
+                "away": {
+                  "scores": 0,
+                  "attempts": 0
+                },
+                "home": {
+                  "scores": 0,
+                  "attempts": 0
+                }
+              },
+              "teams": {
+                "home": {
+                  "team": {
+                    "id": 54,
+                    "name": "Vegas Golden Knights",
+                    "link": "/api/v1/teams/54"
+                  },
+                  "goals": 5,
+                  "shotsOnGoal": 33,
+                  "goaliePulled": false,
+                  "numSkaters": 5,
+                  "powerPlay": false
+                },
+                "away": {
+                  "team": {
+                    "id": 25,
+                    "name": "Dallas Stars",
+                    "link": "/api/v1/teams/25"
+                  },
+                  "goals": 3,
+                  "shotsOnGoal": 27,
+                  "goaliePulled": false,
+                  "numSkaters": 5,
+                  "powerPlay": false
+                }
+              },
+              "powerPlayStrength": "Even",
+              "hasShootout": false,
+              "intermissionInfo": {
+                "intermissionTimeRemaining": 0,
+                "intermissionTimeElapsed": 0,
+                "inIntermission": false
+              },
+              "powerPlayInfo": {
+                "situationTimeRemaining": 0,
+                "situationTimeElapsed": 47,
+                "inSituation": false
+              }
+            },
+            "venue": {
+              "id": 5100,
+              "name": "Rogers Place",
+              "link": "/api/v1/venues/5100"
+            },
+            "broadcasts": [
+              {
+                "id": 324,
+                "name": "NHLN",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 337,
+                "name": "NHL.TV",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 317,
+                "name": "ATTSN-RM",
+                "type": "home",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 20,
+                "name": "FS-SW",
+                "type": "away",
+                "site": "nhl",
+                "language": "en"
+              }
+            ],
+            "content": {
+              "link": "/api/v1/game/2019030012/content"
+            }
+          },
+          {
+            "gamePk": 2019030012,
+            "link": "/api/v1/game/2019030012/feed/live",
+            "gameType": "R",
+            "season": "20192020",
+            "gameDate": "2020-08-03T22:30:00Z",
+            "status": {
+              "abstractGameState": "Scheduled",
+              "codedGameState": "1",
+              "detailedState": "Scheduled",
+              "statusCode": "1",
+              "startTimeTBD": false
+            },
+            "teams": {
+              "away": {
+                "leagueRecord": {
+                  "wins": 0,
+                  "losses": 1,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 3,
+                "team": {
+                  "id": 25,
+                  "name": "Dallas Stars",
+                  "link": "/api/v1/teams/25"
+                }
+              },
+              "home": {
+                "leagueRecord": {
+                  "wins": 1,
+                  "losses": 0,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 5,
+                "team": {
+                  "id": 54,
+                  "name": "Vegas Golden Knights",
+                  "link": "/api/v1/teams/54"
+                }
+              }
+            },
+            "linescore": {
+              "currentPeriod": 3,
+              "currentPeriodOrdinal": "3rd",
+              "currentPeriodTimeRemaining": "Final",
+              "periods": [
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T23:40:20Z",
+                  "endTime": "2020-08-04T00:11:42Z",
+                  "num": 1,
+                  "ordinalNum": "1st",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 7
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 8
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-04T00:30:06Z",
+                  "endTime": "2020-08-04T01:08:21Z",
+                  "num": 2,
+                  "ordinalNum": "2nd",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 10
+                  },
+                  "away": {
+                    "goals": 3,
+                    "shotsOnGoal": 13
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-04T01:26:34Z",
+                  "endTime": "2020-08-04T02:03:48Z",
+                  "num": 3,
+                  "ordinalNum": "3rd",
+                  "home": {
+                    "goals": 4,
+                    "shotsOnGoal": 16
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 6
+                  }
+                }
+              ],
+              "shootoutInfo": {
+                "away": {
+                  "scores": 0,
+                  "attempts": 0
+                },
+                "home": {
+                  "scores": 0,
+                  "attempts": 0
+                }
+              },
+              "teams": {
+                "home": {
+                  "team": {
+                    "id": 54,
+                    "name": "Vegas Golden Knights",
+                    "link": "/api/v1/teams/54"
+                  },
+                  "goals": 5,
+                  "shotsOnGoal": 33,
+                  "goaliePulled": false,
+                  "numSkaters": 5,
+                  "powerPlay": false
+                },
+                "away": {
+                  "team": {
+                    "id": 25,
+                    "name": "Dallas Stars",
+                    "link": "/api/v1/teams/25"
+                  },
+                  "goals": 3,
+                  "shotsOnGoal": 27,
+                  "goaliePulled": false,
+                  "numSkaters": 5,
+                  "powerPlay": false
+                }
+              },
+              "powerPlayStrength": "Even",
+              "hasShootout": false,
+              "intermissionInfo": {
+                "intermissionTimeRemaining": 0,
+                "intermissionTimeElapsed": 0,
+                "inIntermission": false
+              },
+              "powerPlayInfo": {
+                "situationTimeRemaining": 0,
+                "situationTimeElapsed": 47,
+                "inSituation": false
+              }
+            },
+            "venue": {
+              "id": 5100,
+              "name": "Rogers Place",
+              "link": "/api/v1/venues/5100"
+            },
+            "broadcasts": [
+              {
+                "id": 324,
+                "name": "NHLN",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 337,
+                "name": "NHL.TV",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 317,
+                "name": "ATTSN-RM",
+                "type": "home",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 20,
+                "name": "FS-SW",
+                "type": "away",
+                "site": "nhl",
+                "language": "en"
+              }
+            ],
+            "content": {
+              "link": "/api/v1/game/2019030012/content"
+            }
+          },
+          {
+            "gamePk": 2019030032,
+            "link": "/api/v1/game/2019030032/feed/live",
+            "gameType": "P",
+            "season": "20192020",
+            "gameDate": "2020-08-03T16:00:00Z",
+            "status": {
+              "abstractGameState": "Final",
+              "codedGameState": "2",
+              "detailedState": "1st",
+              "statusCode": "2",
+              "startTimeTBD": false
+            },
+            "teams": {
+              "away": {
+                "leagueRecord": {
+                  "wins": 0,
+                  "losses": 2,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 1,
+                "team": {
+                  "id": 3,
+                  "name": "New York Rangers",
+                  "link": "/api/v1/teams/3"
+                }
+              },
+              "home": {
+                "leagueRecord": {
+                  "wins": 2,
+                  "losses": 0,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 4,
+                "team": {
+                  "id": 12,
+                  "name": "Carolina Hurricanes",
+                  "link": "/api/v1/teams/12"
+                }
+              }
+            },
+            "linescore": {
+              "currentPeriod": 3,
+              "currentPeriodOrdinal": "3rd",
+              "currentPeriodTimeRemaining": 1034,
+              "periods": [
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T16:09:51Z",
+                  "endTime": "2020-08-03T16:46:07Z",
+                  "num": 1,
+                  "ordinalNum": "1st",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 6,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 1,
+                    "shotsOnGoal": 7,
+                    "rinkSide": "left"
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T17:05:05Z",
+                  "endTime": "2020-08-03T17:47:04Z",
+                  "num": 2,
+                  "ordinalNum": "2nd",
+                  "home": {
+                    "goals": 2,
+                    "shotsOnGoal": 12,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 10,
+                    "rinkSide": "right"
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T18:02:35Z",
+                  "endTime": "2020-08-03T18:38:12Z",
+                  "num": 3,
+                  "ordinalNum": "3rd",
+                  "home": {
+                    "goals": 1,
+                    "shotsOnGoal": 16,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 0,
+                    "shotsOnGoal": 7,
+                    "rinkSide": "left"
+                  }
+                }
+              ],
+              "shootoutInfo": {
+                "away": {
+                  "scores": 0,
+                  "attempts": 0
+                },
+                "home": {
+                  "scores": 0,
+                  "attempts": 0
+                }
+              },
+              "teams": {
+                "home": {
+                  "team": {
+                    "id": 12,
+                    "name": "Carolina Hurricanes",
+                    "link": "/api/v1/teams/12"
+                  },
+                  "goals": 4,
+                  "shotsOnGoal": 34,
+                  "goaliePulled": false,
+                  "numSkaters": 5,
+                  "powerPlay": true
+                },
+                "away": {
+                  "team": {
+                    "id": 3,
+                    "name": "New York Rangers",
+                    "link": "/api/v1/teams/3"
+                  },
+                  "goals": 1,
+                  "shotsOnGoal": 24,
+                  "goaliePulled": false,
+                  "numSkaters": 4,
+                  "powerPlay": false
+                }
+              },
+              "powerPlayStrength": "5-on-4",
+              "hasShootout": false,
+              "intermissionInfo": {
+                "intermissionTimeRemaining": 623,
+                "intermissionTimeElapsed": 457,
+                "inIntermission": true
+              },
+              "powerPlayInfo": {
+                "situationTimeRemaining": 39,
+                "situationTimeElapsed": 81,
+                "inSituation": true
+              }
+            },
+            "venue": {
+              "name": "Scotiabank Arena",
+              "link": "/api/v1/venues/null"
+            },
+            "broadcasts": [
+              {
+                "id": 241,
+                "name": "NBCSN",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 337,
+                "name": "NHL.TV",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 19,
+                "name": "FS-CR",
+                "type": "home",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 27,
+                "name": "MSG",
+                "type": "away",
+                "site": "nhl",
+                "language": "en"
+              }
+            ],
+            "content": {
+              "link": "/api/v1/game/2019030032/content"
+            }
+          },
+          {
+            "gamePk": 2019030092,
+            "link": "/api/v1/game/2019030092/feed/live",
+            "gameType": "P",
+            "season": "20192020",
+            "gameDate": "2020-08-03T18:30:00Z",
+            "status": {
+              "abstractGameState": "Final",
+              "codedGameState": "2",
+              "detailedState": "2st",
+              "statusCode": "4",
+              "startTimeTBD": false
+            },
+            "teams": {
+              "away": {
+                "leagueRecord": {
+                  "wins": 1,
+                  "losses": 1,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 2,
+                "team": {
+                  "id": 52,
+                  "name": "Winnipeg Jets",
+                  "link": "/api/v1/teams/52"
+                }
+              },
+              "home": {
+                "leagueRecord": {
+                  "wins": 1,
+                  "losses": 1,
+                  "ot": 0,
+                  "type": "league"
+                },
+                "score": 2,
+                "team": {
+                  "id": 20,
+                  "name": "Calgary Flames",
+                  "link": "/api/v1/teams/20"
+                }
+              }
+            },
+            "linescore": {
+              "currentPeriod": 2,
+              "currentPeriodOrdinal": "2nd",
+              "currentPeriodTimeRemaining": 1034,
+              "periods": [
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T18:39:41Z",
+                  "endTime": "2020-08-03T19:16:44Z",
+                  "num": 1,
+                  "ordinalNum": "1st",
+                  "home": {
+                    "goals": 0,
+                    "shotsOnGoal": 10,
+                    "rinkSide": "right"
+                  },
+                  "away": {
+                    "goals": 1,
+                    "shotsOnGoal": 9,
+                    "rinkSide": "left"
+                  }
+                },
+                {
+                  "periodType": "REGULAR",
+                  "startTime": "2020-08-03T19:34:49Z",
+                  "endTime": "2020-08-03T20:11:31Z",
+                  "num": 2,
+                  "ordinalNum": "2nd",
+                  "home": {
+                    "goals": 2,
+                    "shotsOnGoal": 11,
+                    "rinkSide": "left"
+                  },
+                  "away": {
+                    "goals": 1,
+                    "shotsOnGoal": 11,
+                    "rinkSide": "right"
+                  }
+                }
+              ],
+              "shootoutInfo": {
+                "away": {
+                  "scores": 0,
+                  "attempts": 0
+                },
+                "home": {
+                  "scores": 0,
+                  "attempts": 0
+                }
+              },
+              "teams": {
+                "home": {
+                  "team": {
+                    "id": 20,
+                    "name": "Calgary Flames",
+                    "link": "/api/v1/teams/20"
+                  },
+                  "goals": 2,
+                  "shotsOnGoal": 21,
+                  "goaliePulled": false,
+                  "numSkaters": 5,
+                  "powerPlay": true
+                },
+                "away": {
+                  "team": {
+                    "id": 52,
+                    "name": "Winnipeg Jets",
+                    "link": "/api/v1/teams/52"
+                  },
+                  "goals": 2,
+                  "shotsOnGoal": 20,
+                  "goaliePulled": false,
+                  "numSkaters": 4,
+                  "powerPlay": false
+                }
+              },
+              "powerPlayStrength": "5-on-4",
+              "hasShootout": false,
+              "intermissionInfo": {
+                "intermissionTimeRemaining": 0,
+                "intermissionTimeElapsed": 0,
+                "inIntermission": false
+              },
+              "powerPlayInfo": {
+                "situationTimeRemaining": 82,
+                "situationTimeElapsed": 30,
+                "inSituation": true
+              }
+            },
+            "venue": {
+              "id": 5100,
+              "name": "Rogers Place",
+              "link": "/api/v1/venues/5100"
+            },
+            "broadcasts": [
+              {
+                "id": 324,
+                "name": "NHLN",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              },
+              {
+                "id": 337,
+                "name": "NHL.TV",
+                "type": "national",
+                "site": "nhl",
+                "language": "en"
+              }
+            ],
+            "content": {
+              "link": "/api/v1/game/2019030092/content"
+            }
+          }
+        ],
+        "events": [],
+        "matches": []
+      }
+    ]
+  }
+}

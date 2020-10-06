@@ -1,16 +1,15 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import moment from 'moment';
+import React from "react";
+import PropTypes from "prop-types";
 
-const PreGameFooter = ({ venue, startTime, broadcasts }) => {
+const PreGameFooter = ({ venue, broadcasts }) => {
   return (
     <div className="row no-gutters">
       <div className="col-5">{venue.name}</div>
       <div className="col-4 align-text-right">
         {broadcasts && broadcasts.length > 0 ? (
-          broadcasts.map(bc => (
+          broadcasts.map((bc) => (
             <p key={bc.id} className="remove-margin">
-              {bc.name}{' '}
+              {bc.name}{" "}
               <small className="text-muted">
                 {bc.type.toString().toUpperCase()}
               </small>
@@ -20,17 +19,13 @@ const PreGameFooter = ({ venue, startTime, broadcasts }) => {
           <p>No broadcasts available</p>
         )}
       </div>
-      <div className="col-3 align-text-right">
-        {moment(startTime).format('LT')}
-      </div>
     </div>
   );
 };
 
 PreGameFooter.propTypes = {
   venue: PropTypes.object.isRequired,
-  startTime: PropTypes.string.isRequired,
-  broadcasts: PropTypes.arrayOf(PropTypes.object).isRequired
+  broadcasts: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default PreGameFooter;

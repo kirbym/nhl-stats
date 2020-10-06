@@ -38,6 +38,7 @@ const GameCard = ({
             <DetailedState
               detailedState={detailedState}
               linescore={linescore}
+              startTime={gameDate}
             />
           </div>
         </div>
@@ -45,11 +46,7 @@ const GameCard = ({
       {footer && (
         <div className="card-footer">
           {detailedState === "Scheduled" ? (
-            <PreGameFooter
-              venue={venue}
-              startTime={gameDate}
-              broadcasts={broadcasts}
-            />
+            <PreGameFooter venue={venue} broadcasts={broadcasts} />
           ) : (
             <LinescoreFooter
               linescore={linescore}

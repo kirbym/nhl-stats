@@ -9,7 +9,7 @@ import Spinner from "../common/Spinner";
 const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
   useEffect(() => {
     // getGamesByDate();
-    getGamesByDate("2020-08-01", "2020-08-02");
+    getGamesByDate("2020-08-11", "2020-08-11");
     getActiveTeams();
   }, [getGamesByDate, getActiveTeams]);
 
