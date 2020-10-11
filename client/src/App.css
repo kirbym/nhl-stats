@@ -24,22 +24,32 @@
   margin-right: 2vw;
 }
 
-.center-elem {
-  margin: auto;
-  text-align: center;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+.center-y {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.small {
+.center-xy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo-small {
   max-width: 100px;
 }
 
-.medium {
+.logo-medium {
   max-width: 175px;
 }
 
-.large {
+.logo-large {
   max-width: 225px;
 }
 

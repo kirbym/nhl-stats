@@ -11,8 +11,7 @@ const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
   const [date, setDate] = useState(moment());
 
   useEffect(() => {
-    // getGamesByDate(date.format("YYYY-MM-DD"));
-    getGamesByDate("2020-08-12");
+    getGamesByDate(date.format("YYYY-MM-DD"));
     getActiveTeams();
   }, [date, getGamesByDate, getActiveTeams]);
 
@@ -22,41 +21,59 @@ const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
         <Spinner />
       ) : (
         <div className="container-fluid" style={{ marginTop: "5vh" }}>
-          <div className="row no-gutters">
-            <div className="col" />
-            <div className="col-md-8 col-sm-12">
-              <div className="row no-gutters">
-                <div className="col">
+          <div className="row no-gutters" style={{ marginBottom: "2vh" }}>
+            <div className="col-md-8 offset-md-2 col-sm-12">
+              <ul className="list-group list-group-horizontal bg-dark">
+                <li className="list-group-item py-0 px-0 bg-dark">
                   <button
+                    type="button"
+                    className="btn btn-dark"
                     onClick={() => {
                       setDate(moment(date.subtract(1, "days").toDate()));
                     }}
                   >
-                    minus
+                    <i className="fas fa-angle-double-left fa-lg"></i>
                   </button>
-                </div>
-                <div className="col">{date.format("dddd, MMMM D")}</div>
-                <div className="col">
+                </li>
+                <li
+                  className="list-group-item py-0 bg-dark text-light align-text-center"
+                  style={{ width: "100%" }}
+                >
+                  <div>
+                    <span style={{ fontSize: "1.5em" }}>
+                      {date.format("dddd, MMMM D")}
+                    </span>
+                    <span
+                      className="badge badge-light center-y"
+                      style={{ fontSize: ".9em", marginLeft: ".8em" }}
+                    >
+                      {schedule.totalGames}
+                    </span>
+                  </div>
+                </li>
+                <li className="list-group-item py-0 px-0 bg-dark">
                   <button
+                    type="button"
+                    className="btn btn-dark"
                     onClick={() => {
                       setDate(moment(date.add(1, "days").toDate()));
                     }}
                   >
-                    plus
+                    <i className="fas fa-angle-double-right fa-lg"></i>
                   </button>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
-            <div className="col" />
           </div>
           {schedule.dates.length > 0 ? (
             schedule.dates.map((gamesOnDay) => (
               <div key={gamesOnDay.date} className="row no-gutters">
-                <div className="col" />
-                <div key={gamesOnDay.date} className="col-md-8 col-sm-12">
+                <div
+                  key={gamesOnDay.date}
+                  className="col-md-8 offset-md-2 col-sm-12"
+                >
                   <ListOfGames key={gamesOnDay.date} gamesData={gamesOnDay} />
                 </div>
-                <div className="col" />
               </div>
             ))
           ) : (
