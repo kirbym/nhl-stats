@@ -41,15 +41,19 @@
   transform: translate(-50%, -50%);
 }
 
-.logo-small {
+.logo-xs {
+  max-width: 75px;
+}
+
+.logo-sm {
   max-width: 100px;
 }
 
-.logo-medium {
+.logo-md {
   max-width: 175px;
 }
 
-.logo-large {
+.logo-lg {
   max-width: 225px;
 }
 

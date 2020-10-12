@@ -16,7 +16,7 @@ const GameCardTeamRow = ({
   return (
     <div className="row no-gutters">
       <div className="col-4">
-        <TeamLogo teamId={team.id} teamName={team.name} size="logo-small" />
+        <TeamLogo teamId={team.id} teamName={team.name} size="logo-sm" />
       </div>
       <div className="col-6">
         <p className="d-inline">{team.name} </p>
