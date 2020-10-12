@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import TeamLogo from "../logos/TeamLogo";
 
-const TeamRow = ({
+const GameCardTeamRow = ({
   teamData: { team, leagueRecord, score },
   detailedState,
 }) => {
@@ -33,9 +33,9 @@ const TeamRow = ({
   );
 };
 
-TeamRow.propTypes = {
+GameCardTeamRow.propTypes = {
   teamData: PropTypes.object.isRequired,
   detailedState: PropTypes.string.isRequired,
 };
 
-export default TeamRow;
+export default GameCardTeamRow;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import TeamRow from "./TeamRow";
+import GameCardTeamRow from "./GameCardTeamRow";
 import PreGameFooter from "./PreGameFooter";
 import LinescoreFooter from "./LinescoreFooter";
 import DetailedState from "./DetailedState";
@@ -30,9 +30,9 @@ const GameCard = ({
       >
         <div className="row no-gutters">
           <div className="col-10">
-            <TeamRow teamData={home} detailedState={detailedState} />
+            <GameCardTeamRow teamData={home} detailedState={detailedState} />
             <hr style={{ borderWidth: "2px", backgroundColor: "darkgray" }} />
-            <TeamRow teamData={away} detailedState={detailedState} />
+            <GameCardTeamRow teamData={away} detailedState={detailedState} />
           </div>
           <div className="col-2">
             <DetailedState
