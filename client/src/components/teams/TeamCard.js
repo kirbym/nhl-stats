@@ -2,11 +2,14 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import TeamLogo from "../logos/TeamLogo";
+import classNames from "classnames";
 
 const TeamCard = ({ team: { id, name, abbreviation } }) => {
+  const cardCustomBorder = classNames("card", `border-${abbreviation}`);
+
   return (
     <Fragment>
-      <div className="card">
+      <div className={cardCustomBorder}>
         <div className="card-body">
           <div className="row no-gutters">
             <div className="col-3">

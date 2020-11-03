@@ -1,3 +1,9 @@
+:root {
+  --njd-1-primary: #c9142c;
+  --njd-1-secondary: #0a0708;
+  --njd-1-tertiary: #d0d0d0;
+}
+
 .img-center {
   display: block;
   margin-right: auto;
@@ -67,4 +73,8 @@
 
 .align-text-center {
   text-align: center;
+}
+
+.border-NJD {
+  border-color: var(--njd-1-primary);
 }
