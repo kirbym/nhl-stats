@@ -17,7 +17,7 @@ const Teams = ({ getActiveTeams, teams: { loading, activeTeams } }) => {
       ) : (
         <div className="container-fluid" style={{ marginTop: "5vh" }}>
           <div className="row no-gutters">
-            <div className="col-md-12 col-sm-12">
+            <div className="col">
               {activeTeams.length > 0 && (
                 <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
                   {activeTeams.map((team) => (
