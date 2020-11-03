@@ -42,6 +42,25 @@ const GameCard = ({
             />
           </div>
         </div>
+        <div className="row no-gutters" style={{ marginTop: "20px" }}>
+          <div className="col-12">
+            {footer ? (
+              <div className="center-xy">
+                <i
+                  className="fas fa-chevron-up"
+                  style={{ fontSize: "18px" }}
+                ></i>
+              </div>
+            ) : (
+              <div className="center-xy">
+                <i
+                  className="fas fa-chevron-down"
+                  style={{ fontSize: "18px" }}
+                ></i>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
       {footer && (
         <div className="card-footer">
