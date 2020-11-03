@@ -17,21 +17,16 @@ const Teams = ({ getActiveTeams, teams: { loading, activeTeams } }) => {
       ) : (
         <div className="container-fluid" style={{ marginTop: "5vh" }}>
           <div className="row no-gutters">
-            <div
-              className="col-md-10 offset-md-1 col-sm-12"
-              style={{ border: "1px blue solid" }}
-            >
+            <div className="col-md-12 col-sm-12">
               {activeTeams.length > 0 && (
-                <div className="row row-cols-md-4 row-cols-sm-1 row-cols-1">
+                <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
                   {activeTeams.map((team) => (
                     <div
                       key={team.id}
-                      className="col col-xs-12"
-                      style={{
-                        border: "1px black solid",
-                      }}
+                      className="col"
+                      style={{ marginBottom: "1em" }}
                     >
-                      <TeamCard team={team}/>
+                      <TeamCard team={team} />
                     </div>
                   ))}
                 </div>
