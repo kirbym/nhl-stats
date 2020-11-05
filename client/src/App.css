@@ -58,6 +58,36 @@
   --cgy-20-primary: #c8102e;
   --cgy-20-secondary: #f1be48;
   --cgy-20-tertiary: var(--nhl-black);
+  --van-23-primary: #041c2c;
+  --van-23-secondary: #00205b;
+  --van-23-tertiary: #97999b;
+  --ana-24-primary: #b9975b;
+  --ana-24-secondary: #fc4c02;
+  --ana-24-tertiary: var(--nhl-black);
+  --dal-25-primary: #006341;
+  --dal-25-secondary: #a2aaad;
+  --dal-25-tertiary: var(--nhl-black);
+  --lak-26-primary: #000000;
+  --lak-26-secondary: #a2aaad;
+  --lak-26-tertiary: var(--nhl-white);
+  --sjs-28-primary: #006272;
+  --sjs-28-secondary: #e57200;
+  --sjs-28-tertiary: var(--nhl-black);
+  --cbj-29-primary: #041e42;
+  --cbj-29-secondary: #c8102e;
+  --cbj-29-tertiary: var(--nhl-white);
+  --min-30-primary: #154734;
+  --min-30-secondary: #a6192e;
+  --min-30-tertiary: #eaaa00;
+  --wpg-52-primary: #041e42;
+  --wpg-52-secondary: #a2aaad;
+  --wpg-52-tertiary: #a6192e;
+  --ari-53-primary: #862633;
+  --ari-53-secondary: #ddcba4;
+  --ari-53-tertiary: var(--nhl-black);
+  --vgk-54-primary: #b9975b;
+  --vgk-54-secondary: var(--nhl-black);
+  --vgk-54-tertiary: #333f48;
 }
 
 .img-center {
