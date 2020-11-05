@@ -16,6 +16,21 @@
   --pit-5-primary: #ffb81c;
   --pit-5-secondary: var(--nhl-black);
   --pit-5-tertiary: var(--nhl-white);
+  --bos-6-primary: #ffb81c;
+  --bos-6-secondary: var(--nhl-black);
+  --bos-6-tertiary: var(--nhl-white);
+  --buf-7-primary: #003087;
+  --buf-7-secondary: #ffb81c;
+  --buf-7-tertiary: var(--nhl-white);
+  --mtl-8-primary: #a6192e;
+  --mtl-8-seconary: #001e62;
+  --mtl-8-tertiary: var(--nhl-white);
+  --ott-9-primary: #b9975b;
+  --ott-9-secondary: #c8102e;
+  --ott-9-tertiary: var(--nhl-black);
+  --tor-10-primary: #00205b;
+  --tor-10-secondary: var(--nhl-white);
+  --tor-10-tertiary: #00205b;
 }
 
 .img-center {
