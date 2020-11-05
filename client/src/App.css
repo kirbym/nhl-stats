@@ -1,7 +1,21 @@
 :root {
-  --njd-1-primary: #c9142c;
-  --njd-1-secondary: #0a0708;
-  --njd-1-tertiary: #d0d0d0;
+  --nhl-black: #010101;
+  --nhl-white: #ffffff;
+  --njd-1-primary: #c8102e;
+  --njd-1-secondary: var(--nhl-black);
+  --njd-1-tertiary: var(--nhl-white);
+  --nyi-2-primary: #003087;
+  --nyi-2-secondary: #fc4c02;
+  --nyi-2-tertiary: var(--nhl-white);
+  --nyr-3-primary: #0033a0;
+  --nyr-3-secondary: #c8102e;
+  --nyr-3-tertiary: var(--nhl-white);
+  --phi-4-primary: #fa4616;
+  --phi-4-secondary: var(--nhl-black);
+  --phi-4-tertiary: var(--nhl-white);
+  --pit-5-primary: #ffb81c;
+  --pit-5-secondary: var(--nhl-black);
+  --pit-5-tertiary: var(--nhl-white);
 }
 
 .img-center {
