@@ -31,6 +31,33 @@
   --tor-10-primary: #00205b;
   --tor-10-secondary: var(--nhl-white);
   --tor-10-tertiary: #00205b;
+  --car-12-primary: #c8102e;
+  --car-12-secondary: var(--nhl-black);
+  --car-12-tertiary: var(--nhl-white);
+  --fla-13-primary: #b9975b;
+  --fla-13-secondary: #041e42;
+  --fla-13-tertiary: #c8102e;
+  --tbl-14-primary: #00205b;
+  --tbl-14-secondary: var(--nhl-white);
+  --tbl-14-tertiary: #00205b;
+  --wsh-15-primary: #041e42;
+  --wsh-15-secondary: #c8102e;
+  --wsh-15-tertiary: var(--nhl-white);
+  --chi-16-primary: #c8102e;
+  --chi-16-secondary: var(--nhl-black);
+  --chi-16-tertiary: var(--nhl-white);
+  --det-17-primary: #c8102e;
+  --det-17-secondary: var(--nhl-white);
+  --det-17-tertiary: #c8102e;
+  --nsh-18-primary: #ffb81c;
+  --nsh-18-secondary: #041e42;
+  --nsh-18-tertiary: var(--nhl-white);
+  --stl-19-primary: #003087;
+  --stl-19-secondary: #ffb81c;
+  --stl-19-tertiary: var(--nhl-white);
+  --cgy-20-primary: #c8102e;
+  --cgy-20-secondary: #f1be48;
+  --cgy-20-tertiary: var(--nhl-black);
 }
 
 .img-center {
