@@ -200,3 +200,43 @@
 .border-TOR {
   border-color: var(--TOR-10-primary);
 }
+
+.border-CAR {
+  border-color: var(--CAR-12-primary);
+}
+
+.border-FLA {
+  border-color: var(--FLA-13-primary);
+}
+
+.border-TBL {
+  border-color: var(--TBL-14-primary);
+}
+
+.border-WSH {
+  border-color: var(--WSH-15-primary);
+}
+
+.border-CHI {
+  border-color: var(--CHI-16-primary);
+}
+
+.border-DET {
+  border-color: var(--DET-17-primary);
+}
+
+.border-NSH {
+  border-color: var(--NSH-18-primary);
+}
+
+.border-STL {
+  border-color: var(--STL-19-primary);
+}
+
+.border-CGY {
+  border-color: var(--CGY-20-primary);
+}
+
+.border-VAN {
+  border-color: var(--VAN-23-primary);
+}
