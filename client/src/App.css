@@ -164,3 +164,39 @@
 .border-NJD {
   border-color: var(--NJD-1-primary);
 }
+
+.border-NYI {
+  border-color: var(--NYI-2-primary);
+}
+
+.border-NYR {
+  border-color: var(--NYR-3-primary);
+}
+
+.border-PHI {
+  border-color: var(--PHI-4-primary);
+}
+
+.border-PIT {
+  border-color: var(--PIT-5-primary);
+}
+
+.border-BOS {
+  border-color: var(--BOS-6-primary);
+}
+
+.border-BUF {
+  border-color: var(--BUF-7-primary);
+}
+
+.border-MTL {
+  border-color: var(--MTL-8-primary);
+}
+
+.border-OTT {
+  border-color: var(--OTT-9-primary);
+}
+
+.border-TOR {
+  border-color: var(--TOR-10-primary);
+}
