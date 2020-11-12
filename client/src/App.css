@@ -240,3 +240,39 @@
 .border-VAN {
   border-color: var(--VAN-23-primary);
 }
+
+.border-ANA {
+  border-color: var(--ANA-24-primary);
+}
+
+.border-DAL {
+  border-color: var(--DAL-25-primary);
+}
+
+.border-LAK {
+  border-color: var(--LAK-26-primary);
+}
+
+.border-SJS {
+  border-color: var(--SJS-28-primary);
+}
+
+.border-CBJ {
+  border-color: var(--CBJ-29-primary);
+}
+
+.border-MIN {
+  border-color: var(--MIN-30-primary);
+}
+
+.border-WPG {
+  border-color: var(--WPG-52-primary);
+}
+
+.border-ARI {
+  border-color: var(--ARI-53-primary);
+}
+
+.border-VGK {
+  border-color: var(--VGK-54-primary);
+}
