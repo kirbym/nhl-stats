@@ -58,6 +58,12 @@
   --CGY-20-primary: #c8102e;
   --CGY-20-secondary: #f1be48;
   --CGY-20-tertiary: var(--nhl-black);
+  --COL-21-primary: #236192;
+  --COL-21-secondary: #6f263d;
+  --COL-21-tertiary: var(--nhl-white);
+  --EDM-22-primary: #041e42;
+  --EDM-22-secondary: var(--nhl-white);
+  --EDM-22-tertiary: #fc4c02;
   --VAN-23-primary: #041c2c;
   --VAN-23-secondary: #00205b;
   --VAN-23-tertiary: #97999b;
@@ -235,6 +241,14 @@
 
 .border-CGY {
   border-color: var(--CGY-20-primary);
+}
+
+.border-COL {
+  border-color: var(--COL-21-primary);
+}
+
+.border-EDM {
+  border-color: var(--EDM-22-primary);
 }
 
 .border-VAN {
