@@ -1,87 +1,85 @@
 :root {
-  --nhl-black: #010101;
-  --nhl-white: #ffffff;
   --NJD-1-primary: #c8102e;
-  --NJD-1-secondary: var(--nhl-black);
-  --NJD-1-tertiary: var(--nhl-white);
+  --NJD-1-secondary: black;
+  --NJD-1-tertiary: white;
   --NYI-2-primary: #003087;
   --NYI-2-secondary: #fc4c02;
-  --NYI-2-tertiary: var(--nhl-white);
+  --NYI-2-tertiary: white;
   --NYR-3-primary: #0033a0;
   --NYR-3-secondary: #c8102e;
-  --NYR-3-tertiary: var(--nhl-white);
+  --NYR-3-tertiary: white;
   --PHI-4-primary: #fa4616;
-  --PHI-4-secondary: var(--nhl-black);
-  --PHI-4-tertiary: var(--nhl-white);
+  --PHI-4-secondary: black;
+  --PHI-4-tertiary: white;
   --PIT-5-primary: #ffb81c;
-  --PIT-5-secondary: var(--nhl-black);
-  --PIT-5-tertiary: var(--nhl-white);
+  --PIT-5-secondary: black;
+  --PIT-5-tertiary: white;
   --BOS-6-primary: #ffb81c;
-  --BOS-6-secondary: var(--nhl-black);
-  --BOS-6-tertiary: var(--nhl-white);
+  --BOS-6-secondary: black;
+  --BOS-6-tertiary: white;
   --BUF-7-primary: #003087;
   --BUF-7-secondary: #ffb81c;
-  --BUF-7-tertiary: var(--nhl-white);
+  --BUF-7-tertiary: white;
   --MTL-8-primary: #a6192e;
   --MTL-8-seconary: #001e62;
-  --MTL-8-tertiary: var(--nhl-white);
+  --MTL-8-tertiary: white;
   --OTT-9-primary: #b9975b;
   --OTT-9-secondary: #c8102e;
-  --OTT-9-tertiary: var(--nhl-black);
+  --OTT-9-tertiary: black;
   --TOR-10-primary: #00205b;
-  --TOR-10-secondary: var(--nhl-white);
+  --TOR-10-secondary: white;
   --TOR-10-tertiary: #00205b;
   --CAR-12-primary: #c8102e;
-  --CAR-12-secondary: var(--nhl-black);
-  --CAR-12-tertiary: var(--nhl-white);
+  --CAR-12-secondary: black;
+  --CAR-12-tertiary: white;
   --FLA-13-primary: #b9975b;
   --FLA-13-secondary: #041e42;
   --FLA-13-tertiary: #c8102e;
   --TBL-14-primary: #00205b;
-  --TBL-14-secondary: var(--nhl-white);
+  --TBL-14-secondary: white;
   --TBL-14-tertiary: #00205b;
   --WSH-15-primary: #041e42;
   --WSH-15-secondary: #c8102e;
-  --WSH-15-tertiary: var(--nhl-white);
+  --WSH-15-tertiary: white;
   --CHI-16-primary: #c8102e;
-  --CHI-16-secondary: var(--nhl-black);
-  --CHI-16-tertiary: var(--nhl-white);
+  --CHI-16-secondary: black;
+  --CHI-16-tertiary: white;
   --DET-17-primary: #c8102e;
-  --DET-17-secondary: var(--nhl-white);
+  --DET-17-secondary: white;
   --DET-17-tertiary: #c8102e;
   --NSH-18-primary: #ffb81c;
   --NSH-18-secondary: #041e42;
-  --NSH-18-tertiary: var(--nhl-white);
+  --NSH-18-tertiary: white;
   --STL-19-primary: #003087;
   --STL-19-secondary: #ffb81c;
-  --STL-19-tertiary: var(--nhl-white);
+  --STL-19-tertiary: white;
   --CGY-20-primary: #c8102e;
   --CGY-20-secondary: #f1be48;
-  --CGY-20-tertiary: var(--nhl-black);
+  --CGY-20-tertiary: black;
   --COL-21-primary: #236192;
   --COL-21-secondary: #6f263d;
-  --COL-21-tertiary: var(--nhl-white);
+  --COL-21-tertiary: white;
   --EDM-22-primary: #041e42;
-  --EDM-22-secondary: var(--nhl-white);
+  --EDM-22-secondary: white;
   --EDM-22-tertiary: #fc4c02;
   --VAN-23-primary: #041c2c;
   --VAN-23-secondary: #00205b;
   --VAN-23-tertiary: #97999b;
   --ANA-24-primary: #b9975b;
   --ANA-24-secondary: #fc4c02;
-  --ANA-24-tertiary: var(--nhl-black);
+  --ANA-24-tertiary: black;
   --DAL-25-primary: #006341;
   --DAL-25-secondary: #a2aaad;
-  --DAL-25-tertiary: var(--nhl-black);
+  --DAL-25-tertiary: black;
   --LAK-26-primary: #000000;
   --LAK-26-secondary: #a2aaad;
-  --LAK-26-tertiary: var(--nhl-white);
+  --LAK-26-tertiary: white;
   --SJS-28-primary: #006272;
   --SJS-28-secondary: #e57200;
-  --SJS-28-tertiary: var(--nhl-black);
+  --SJS-28-tertiary: black;
   --CBJ-29-primary: #041e42;
   --CBJ-29-secondary: #c8102e;
-  --CBJ-29-tertiary: var(--nhl-white);
+  --CBJ-29-tertiary: white;
   --MIN-30-primary: #154734;
   --MIN-30-secondary: #a6192e;
   --MIN-30-tertiary: #eaaa00;
@@ -90,9 +88,9 @@
   --WPG-52-tertiary: #a6192e;
   --ARI-53-primary: #862633;
   --ARI-53-secondary: #ddcba4;
-  --ARI-53-tertiary: var(--nhl-black);
+  --ARI-53-tertiary: black;
   --VGK-54-primary: #b9975b;
-  --VGK-54-secondary: var(--nhl-black);
+  --VGK-54-secondary: black;
   --VGK-54-tertiary: #333f48;
 }
 
@@ -289,4 +287,12 @@
 
 .border-VGK {
   border-color: var(--VGK-54-primary);
+}
+
+.dark-link {
+  color: black;
+}
+
+.dark-link:hover {
+  color: rgb(40, 82, 145);
 }
