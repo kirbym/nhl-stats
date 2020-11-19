@@ -17,7 +17,7 @@ const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
 
   return (
     <Fragment>
-      {schedule.loading ? (
+      {schedule === null || schedule === undefined || schedule.loading ? (
         <Spinner />
       ) : (
         <div className="container-fluid" style={{ marginTop: "5vh" }}>

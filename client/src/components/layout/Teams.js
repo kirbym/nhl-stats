@@ -12,7 +12,7 @@ const Teams = ({ getActiveTeams, teams: { loading, activeTeams } }) => {
 
   return (
     <Fragment>
-      {loading ? (
+      {activeTeams === null || activeTeams === undefined || loading ? (
         <Spinner />
       ) : (
         <div className="container-fluid" style={{ marginTop: "5vh" }}>
