@@ -2,8 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
-import classNames from "classnames";
-import TeamLogo from "../logos/TeamLogo";
+import Spinner from "../common/Spinner";
 import { getTeamById } from "../../actions/teams";
 
 const TeamDetail = ({ getTeamById, teams: { loading, selectedTeam } }) => {
@@ -16,12 +15,43 @@ const TeamDetail = ({ getTeamById, teams: { loading, selectedTeam } }) => {
   return (
     <Fragment>
       {selectedTeam === null || selectedTeam === undefined || loading ? (
-        <p>is loading</p>
+        <Spinner />
       ) : (
-        <Fragment>
-          <div>TeamDetail {`${teamId}`}</div>
-          <div>selected team {selectedTeam.name} </div>
-        </Fragment>
+        <div>
+          <div className="row no-gutters">
+            <div className="offset-md-1 col-md-10">
+              <div className="row no-gutters">
+                <div className="col-md-6" style={{ border: "1px solid red" }}>
+                  name, record, points
+                </div>
+                <div className="col-md-6" style={{ border: "1px solid green" }}>
+                  conference, division, venue
+                </div>
+              </div>
+              <div className="row no-gutters">
+                <div className="col-md-6" style={{ border: "1px solid black" }}>
+                  previous game
+                </div>
+                {selectedTeam.nextGameSchedule && (
+                  <div
+                    className="col-md-6"
+                    style={{ border: "1px solid blue" }}
+                  >
+                    next game
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="row no-gutters">
+            <div
+              className="offset-md-1 col-md-10"
+              style={{ border: "1px solid orange" }}
+            >
+              roster
+            </div>
+          </div>
+        </div>
       )}
     </Fragment>
   );
