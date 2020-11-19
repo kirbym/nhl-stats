@@ -19,33 +19,38 @@ const TeamDetail = ({ getTeamById, teams: { loading, selectedTeam } }) => {
       ) : (
         <div>
           <div className="row no-gutters">
-            <div className="offset-md-1 col-md-10">
-              <div className="row no-gutters">
-                <div className="col-md-6" style={{ border: "1px solid red" }}>
-                  name, record, points
-                </div>
-                <div className="col-md-6" style={{ border: "1px solid green" }}>
-                  conference, division, venue
-                </div>
-              </div>
-              <div className="row no-gutters">
-                <div className="col-md-6" style={{ border: "1px solid black" }}>
-                  previous game
-                </div>
-                {selectedTeam.nextGameSchedule && (
-                  <div
-                    className="col-md-6"
-                    style={{ border: "1px solid blue" }}
-                  >
-                    next game
-                  </div>
-                )}
-              </div>
+            <div
+              className="offset-lg-2 col-lg-4 offset-md-1 col-md-5 offset-sm-1 col-sm-5 col-xs-12"
+              style={{ border: "1px solid red" }}
+            >
+              name, record, points
+            </div>
+            <div
+              className="col-lg-4 col-md-5 col-sm-5 col-xs-12"
+              style={{ border: "1px solid green" }}
+            >
+              conference, division, venue
             </div>
           </div>
           <div className="row no-gutters">
             <div
-              className="offset-md-1 col-md-10"
+              className="offset-lg-2 col-lg-4 offset-md-1 col-md-5 offset-sm-1 col-sm-5 col-xs-12"
+              style={{ border: "1px solid black" }}
+            >
+              previous game
+            </div>
+            {selectedTeam.nextGameSchedule && (
+              <div
+                className="col-lg-4 col-md-5 col-sm-5 col-xs-12"
+                style={{ border: "1px solid blue" }}
+              >
+                next game
+              </div>
+            )}
+          </div>
+          <div className="row no-gutters">
+            <div
+              className="offset-lg-2 col-lg-8 offset-md-1 col-md-10 offset-sm-1 col-sm-10 col-xs-12"
               style={{ border: "1px solid orange" }}
             >
               roster
