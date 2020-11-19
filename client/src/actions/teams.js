@@ -18,7 +18,7 @@ export const getActiveTeams = () => async (dispatch) => {
 
 export const getTeamById = (id) => async (dispatch) => {
   const url = `https://statsapi.web.nhl.com/api/v1/teams/${id}
-    ?expand=team.roster&expand=team.schedule.previous&expand=team.schedule.next`;
+    ?expand=team.roster&expand=team.schedule.previous&expand=team.schedule.next&expand=team.stats`;
 
   try {
     const res = await axios.get(url);
