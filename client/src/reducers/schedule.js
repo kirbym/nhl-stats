@@ -1,6 +1,8 @@
 import { GET_SCHEDULE } from "../actions/types";
 
 const initialState = {
+  totalGames: null,
+  dates: null,
   loading: true,
 };
 
@@ -10,6 +12,7 @@ export default function (state = initialState, action) {
   switch (type) {
     case GET_SCHEDULE:
       return {
+        ...state,
         ...payload,
         loading: false,
       };
