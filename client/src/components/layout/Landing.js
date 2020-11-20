@@ -17,7 +17,7 @@ const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
 
   return (
     <Fragment>
-      {schedule === null || schedule === undefined || schedule.loading ? (
+      {schedule.loading ? (
         <Spinner />
       ) : (
         <div className="container-fluid" style={{ marginTop: "5vh" }}>
@@ -43,12 +43,14 @@ const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
                     <span style={{ fontSize: "1.5em" }}>
                       {date.format("dddd, MMMM D")}
                     </span>
-                    <span
-                      className="badge badge-light center-y"
-                      style={{ fontSize: ".9em", marginLeft: ".8em" }}
-                    >
-                      {schedule.totalGames}
-                    </span>
+                    {schedule.totalGames !== null && (
+                      <span
+                        className="badge badge-light center-y"
+                        style={{ fontSize: ".9em", marginLeft: ".8em" }}
+                      >
+                        {schedule.totalGames}
+                      </span>
+                    )}
                   </div>
                 </li>
                 <li className="list-group-item py-0 px-0 bg-dark">
@@ -65,7 +67,7 @@ const Landing = ({ getGamesByDate, getActiveTeams, schedule }) => {
               </ul>
             </div>
           </div>
-          {schedule.dates.length > 0 ? (
+          {schedule.dates !== null && schedule.dates.length > 0 ? (
             schedule.dates.map((gamesOnDay) => (
               <div key={gamesOnDay.date} className="row no-gutters">
                 <div
