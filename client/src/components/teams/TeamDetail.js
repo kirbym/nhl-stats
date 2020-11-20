@@ -14,7 +14,7 @@ const TeamDetail = ({ getTeamById, teams: { loading, selectedTeam } }) => {
 
   return (
     <Fragment>
-      {selectedTeam === null || selectedTeam === undefined || loading ? (
+      {selectedTeam === null || loading ? (
         <Spinner />
       ) : (
         <div>
