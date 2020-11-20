@@ -9,7 +9,10 @@ export const getGamesByDate = (dateString) => async (dispatch) => {
 
     dispatch({
       type: GET_SCHEDULE,
-      payload: res.data,
+      payload: {
+        totalGames: res.data.totalGames,
+        dates: res.data.dates,
+      },
     });
   } catch (err) {
     console.error(err);
