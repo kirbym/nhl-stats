@@ -1,6 +1,8 @@
 import { GET_ACTIVE_TEAMS, GET_TEAM_BY_ID } from "../actions/types";
 
 const initialState = {
+  activeTeams: null,
+  selectedTeam: null,
   loading: true,
 };
 
